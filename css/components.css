@@ -155,7 +155,7 @@
 
 /* Development Process */
 .development-process {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .process-timeline {
@@ -207,7 +207,7 @@
 
 /* Product Filter & Cards */
 .product-filter-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .filter-controls {
@@ -409,7 +409,7 @@
 
 /* Innovation Highlights */
 .innovation-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .innovation-grid {
@@ -462,7 +462,7 @@
 
 /* Contact Form */
 .contact-form-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
     background: var(--bg-secondary);
 }
 
@@ -608,12 +608,12 @@
 
 /* Location Cards */
 .locations-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .locations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 2rem;
 }
 
@@ -658,7 +658,7 @@
 }
 
 .location-content {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .location-content h3 {
@@ -801,7 +801,7 @@
 
 /* FAQ Accordion */
 .faq-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .faq-accordion {
@@ -933,7 +933,7 @@
 
 /* News & Media */
 .featured-news {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .featured-article {
@@ -1216,7 +1216,7 @@
 
 /* Social Initiatives */
 .social-initiatives {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .initiatives-grid {
@@ -1260,7 +1260,7 @@
 
 /* Impact Areas */
 .impact-areas {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .impact-grid {

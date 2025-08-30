@@ -14,6 +14,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/investors.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/components.css">
 
@@ -88,8 +89,8 @@
                         <div class="hero-actions">
                             <button class="btn btn-primary" data-page="about">Our Mission</button>
                             <button class="btn btn-secondary" data-page="products">Products</button>
-                            <button class="btn btn-outline" data-page="investors">Investors</button>
-                            <button class="btn btn-outline" data-page="contact">Contact</button>
+                            <button class="btn btn-primary" data-page="investors">Investors</button>
+                            <button class="btn btn-secondary" data-page="contact">Contact</button>
                         </div>
                     </div>
                 </div>
@@ -489,7 +490,7 @@
 
                     <div class="map-container animate-on-scroll" data-animation="zoom-in">
                         <div class="world-map">
-                            <img src="https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600"
+                            <img src="https://static.vecteezy.com/system/resources/previews/002/730/399/non_2x/high-detail-political-map-of-the-world-blue-and-white-vector.jpg"
                                 alt="Global Presence Map" class="map-image lazy" loading="lazy">
 
                             <div class="location-pin india-pin" data-location="india">
@@ -1292,7 +1293,7 @@
                 </div>
             </section>
         </section>
-
+        
         <!-- Investor Relations Page -->
         <section id="investors" class="page" data-page="investors">
             <div class="page-hero">
@@ -1351,7 +1352,7 @@
                                 <i class="fas fa-dollar-sign"></i>
                             </div>
                             <div class="stat-content">
-                                <div class="stat-number">$25M</div>
+                                <div class="stat-num">$25M</div>
                                 <div class="stat-label">Total Investment (Phased)</div>
                             </div>
                         </div>
@@ -1361,7 +1362,7 @@
                                 <i class="fas fa-trophy"></i>
                             </div>
                             <div class="stat-content">
-                                <div class="stat-number">$250M</div>
+                                <div class="stat-num">$250M</div>
                                 <div class="stat-label">Expected 5-Year Valuation</div>
                             </div>
                         </div>
@@ -1371,7 +1372,7 @@
                                 <i class="fas fa-percentage"></i>
                             </div>
                             <div class="stat-content">
-                                <div class="stat-number">26%</div>
+                                <div class="stat-num">26%</div>
                                 <div class="stat-label">Max Government Equity</div>
                             </div>
                         </div>
@@ -1381,7 +1382,7 @@
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div class="stat-content">
-                                <div class="stat-number">5</div>
+                                <div class="stat-num">5</div>
                                 <div class="stat-label">Year Investment Timeline</div>
                             </div>
                         </div>
@@ -1515,60 +1516,6 @@
                 </div>
             </section>
 
-            <!-- Investment Documents -->
-            <section class="documents-section">
-                <div class="container">
-                    <h2 class="section-title animate-on-scroll" data-animation="fade-up">Investment Documents</h2>
-
-                    <div class="documents-grid">
-                        <div class="document-card animate-on-scroll" data-animation="fade-up" data-delay="100">
-                            <div class="document-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4>Investment Prospectus</h4>
-                            <p>Comprehensive overview of investment opportunities, financial projections, and market
-                                analysis</p>
-                            <button class="btn btn-primary" onclick="simulateDownload('investment-prospectus.pdf')">
-                                <i class="fas fa-download"></i> Download PDF
-                            </button>
-                        </div>
-
-                        <div class="document-card animate-on-scroll" data-animation="fade-up" data-delay="200">
-                            <div class="document-icon">
-                                <i class="fas fa-presentation"></i>
-                            </div>
-                            <h4>Investor Pitch Deck</h4>
-                            <p>Executive presentation highlighting key investment highlights and growth opportunities
-                            </p>
-                            <button class="btn btn-primary" onclick="simulateDownload('pitch-deck.pdf')">
-                                <i class="fas fa-download"></i> Download PDF
-                            </button>
-                        </div>
-
-                        <div class="document-card animate-on-scroll" data-animation="fade-up" data-delay="300">
-                            <div class="document-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h4>Financial Projections</h4>
-                            <p>Detailed financial models, revenue forecasts, and return on investment analysis</p>
-                            <button class="btn btn-primary" onclick="simulateDownload('financial-projections.pdf')">
-                                <i class="fas fa-download"></i> Download PDF
-                            </button>
-                        </div>
-
-                        <div class="document-card animate-on-scroll" data-animation="fade-up" data-delay="400">
-                            <div class="document-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h4>Partnership Agreements</h4>
-                            <p>Templates and guidelines for joint venture and partnership opportunities</p>
-                            <button class="btn btn-primary" onclick="simulateDownload('partnership-agreements.pdf')">
-                                <i class="fas fa-download"></i> Download PDF
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </section>
 
         <!-- Contact & Locations Page -->
@@ -2135,43 +2082,7 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Press Resources -->
-            <section class="press-resources">
-                <div class="container">
-                    <h2 class="section-title animate-on-scroll" data-animation="fade-up">Press Resources</h2>
-
-                    <div class="resources-grid">
-                        <div class="resource-card animate-on-scroll" data-animation="fade-left" data-delay="100">
-                            <div class="resource-icon">
-                                <i class="fas fa-download"></i>
-                            </div>
-                            <h4>Media Kit</h4>
-                            <p>Complete media kit including company logos, executive photos, and brand guidelines</p>
-                            <button class="btn btn-outline" onclick="simulateDownload('media-kit.zip')">Download
-                                Kit</button>
-                        </div>
-
-                        <div class="resource-card animate-on-scroll" data-animation="fade-up" data-delay="200">
-                            <div class="resource-icon">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                            <h4>Press Releases</h4>
-                            <p>Archive of all official press releases and company announcements</p>
-                            <button class="btn btn-outline">View Archive</button>
-                        </div>
-
-                        <div class="resource-card animate-on-scroll" data-animation="fade-right" data-delay="300">
-                            <div class="resource-icon">
-                                <i class="fas fa-microphone"></i>
-                            </div>
-                            <h4>Media Contacts</h4>
-                            <p>Direct contact information for media inquiries and interview requests</p>
-                            <button class="btn btn-outline" data-page="contact">Contact Media Team</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
         </section>
 
     </main>
@@ -2261,6 +2172,7 @@
 
     <!-- Scripts -->
     <script src="./js/main.js"></script>
+    <!-- <script src="./js/investors.js"></script> -->
     <script src="./js/animations.js"></script>
     <script src="./js/lazy-loading.js"></script>
     <script src="./js/forms.js"></script>

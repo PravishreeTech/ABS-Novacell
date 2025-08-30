@@ -203,7 +203,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -230,7 +230,7 @@ p {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -346,7 +346,7 @@ p {
 .page-hero {
     background: var(--gradient-hero);
     color: white;
-    padding: 6rem 0 4rem;
+    padding: 2rem 0 4rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -489,18 +489,6 @@ p {
     box-shadow: var(--shadow-lg);
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: var(--primary-color);
-    transform: translateY(-2px);
-}
-
 .btn-full {
     width: 100%;
 }
@@ -559,7 +547,7 @@ p {
 
 /* Section Styles */
 section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .section-title {
@@ -817,7 +805,7 @@ section {
 
 /* Mission Vision */
 .mission-vision-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .mission-vision-grid {
@@ -871,7 +859,7 @@ section {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -947,7 +935,7 @@ section {
 
 /* Leadership */
 .leadership-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .leadership-grid {
@@ -1074,7 +1062,7 @@ section {
 
 /* Global Presence */
 .global-presence-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .map-container {
@@ -1182,13 +1170,13 @@ section {
 .footer {
     background: var(--gray-900);
     color: white;
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -1343,7 +1331,7 @@ section {
     }
     
     section {
-        padding: 4rem 0;
+        padding: 1rem 0;
     }
     
     .hero-actions {
@@ -1376,7 +1364,7 @@ section {
     .timeline-item {
         width: 100%;
         left: 0 !important;
-        padding-left: 4rem !important;
+        padding-left: 2rem !important;
         padding-right: 0 !important;
     }
     

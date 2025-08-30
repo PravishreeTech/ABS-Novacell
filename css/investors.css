@@ -1,0 +1,378 @@
+.investment-opportunity {
+    background: var(--bg-secondary);
+}
+
+.opportunity-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.opportunity-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-100);
+}
+
+.highlight-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.highlight-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.highlight-item h4 {
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+.highlight-item p {
+    color: var(--gray-600);
+    margin-bottom: 0;
+}
+
+/********************************* Timeline **************************/
+.investment-stats {
+    background: var(--gray-50);
+    padding: 5rem 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.investment-stat {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-100);
+}
+
+.investment-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    background: var(--gradient-secondary);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.stat-num {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--gray-600);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.funding-timeline {
+    padding: 5rem 0;
+    background: white;
+}
+
+.timeline-phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.phase-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-200);
+}
+
+.phase-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.phase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gray-200);
+}
+
+.phase-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.phase-duration {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.funding-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.progress-bar {
+    position: relative;
+    background: var(--gray-200);
+    height: 12px;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 6px;
+    transition: width 2s ease-out;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.phase-milestones {
+    list-style: none;
+}
+
+.phase-milestones li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+}
+
+.phase-milestones li:last-child {
+    border-bottom: none;
+}
+
+.phase-milestones li.completed {
+    color: var(--success-color);
+}
+
+.phase-milestones li.completed::before {
+    content: '✓';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--success-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.phase-milestones li.in-progress {
+    color: var(--warning-color);
+}
+
+.phase-milestones li.in-progress::before {
+    content: '⏳';
+    display: inline-block;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.phase-milestones li.pending {
+    color: var(--gray-500);
+}
+
+.phase-milestones li.pending::before {
+    content: '○';
+    display: inline-block;
+    width: 20px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+
+/* Partnerships Section */
+.partnerships-section {
+    background: var(--bg-tertiary);
+    padding: 5rem 0;
+}
+
+.partnerships-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.partnership-slide {
+    display: none;
+    opacity: 0;
+    transition: all var(--transition-slow);
+}
+
+.partnership-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.partnership-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.partnership-image {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.partnership-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.partnership-card:hover .partnership-image img {
+    transform: scale(1.05);
+}
+
+.partnership-content {
+    padding: 2.5rem;
+}
+
+.partnership-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.partnership-content p {
+    color: var(--gray-600);
+    margin-bottom: 2rem;
+}
+
+.partnership-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.benefit-tag {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.carousel-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+}
+
+.carousel-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
