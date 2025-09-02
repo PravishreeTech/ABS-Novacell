@@ -72,19 +72,19 @@ p {
 /* Color Palette */
 :root {
     /* Primary Colors */
-    --primary-color: #2563eb;
-    --primary-light: #3b82f6;
-    --primary-dark: #1d4ed8;
+    --primary-color: #213F61;
+    --primary-light: #26667F;
+    --primary-dark: #124170;
     
     /* Secondary Colors */
-    --secondary-color: #14b8a6;
-    --secondary-light: #20d4c8;
-    --secondary-dark: #0d9488;
+    --secondary-color: #AA2132;
+    --secondary-light: #E62727;
+    --secondary-dark: #B22234;
     
     /* Accent Colors */
-    --accent-color: #f97316;
-    --accent-light: #fb923c;
-    --accent-dark: #ea580c;
+    --accent-color: #AA2132;
+    --accent-light: #E62727;
+    --accent-dark: #B22234;
     
     /* Status Colors */
     --success-color: #10b981;
@@ -109,8 +109,8 @@ p {
     --bg-tertiary: #f1f5f9;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 70%);
+    --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 70%);
     --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(20, 184, 166, 0.8) 100%);
     
     /* Shadows */
@@ -191,6 +191,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
+    height: 80px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--gray-200);
@@ -202,8 +203,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    max-width: 1600px;
+    padding: 1.5rem 2rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -378,12 +379,14 @@ p {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    height: 100%;
     position: relative;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 40px 0px;
 }
 
 .hero-background {
@@ -407,7 +410,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--gradient-hero);
+    background: rgba(33, 63, 97, 0.7);
 }
 
 .hero-content {
@@ -418,8 +421,8 @@ p {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    margin-bottom: 2rem;
     color: white;
 }
 
@@ -547,7 +550,7 @@ p {
 
 /* Section Styles */
 section {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .section-title {
@@ -876,7 +879,7 @@ section {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     width: 50%;
 }
 
@@ -1168,7 +1171,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--gray-900);
+    background: var(--primary-color);
     color: white;
     padding: 3rem 0 2rem;
 }
@@ -1197,7 +1200,7 @@ section {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-light);
+    color: var(--bg-primary);
 }
 
 .footer-tagline {
@@ -1216,20 +1219,20 @@ section {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: var(--primary-color);
-    color: white;
+    background: var(--bg-primary);
+    color: var(--primary-color);
     border-radius: 50%;
     text-decoration: none;
     transition: all var(--transition-normal);
 }
 
 .social-links a:hover {
-    background: var(--primary-light);
-    transform: translateY(-2px);
+    /* background: var(--primary-color); */
+    transform: translateY(-4px);
 }
 
 .footer-section h4 {
-    color: var(--primary-light);
+    color: var(--bg-primary);
     margin-bottom: 1.5rem;
 }
 
@@ -1248,7 +1251,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: var(--primary-light);
+    color: var(--bg-primary);
 }
 
 .contact-info p {
@@ -1256,7 +1259,7 @@ section {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
-    color: var(--gray-700);
+    color: var(--gray-300);
 }
 
 .contact-info i {
@@ -1289,7 +1292,7 @@ section {
 }
 
 .footer-legal a:hover {
-    color: var(--primary-light);
+    color: var(--bg-primary);
 }
 
 /* Back to Top */
