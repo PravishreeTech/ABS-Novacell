@@ -1,0 +1,81 @@
+.team-section {
+  background: #f5f8fd;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  border-left: 5px solid #3b82f6;
+  padding-left: 12px;
+  letter-spacing: 0.5px;
+}
+
+.team-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 35px;
+}
+
+.team-list li {
+  padding: 8px 0;
+  font-size: 1.15rem;
+  color: #374151;
+  border-bottom: 1px solid #e0e7ef;
+  display: flex;
+  align-items: center;
+}
+
+.team-list .name {
+  font-weight: 600;
+  color: #2563eb;
+  margin-right: 6px;
+}
+
+.bios-group {
+  margin-top: 25px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bio {
+  background: #fff;
+  padding: 22px 18px;
+  border-radius: 11px;
+  box-shadow: 0 4px 14px rgba(60, 130, 246, 0.07);
+  min-width: 280px;
+  flex: 1;
+  margin-bottom: 22px;
+}
+
+.bio h3 {
+  color: #1e40af;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bio p {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .bios-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
