@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #2d3748;
+    color: var(--primary-color);
     background-color: #ffffff;
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #1a202c;
+    color: var(--primary-color);
 }
 
 h1 {
@@ -109,7 +109,7 @@ p {
     --bg-tertiary: #f1f5f9;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 70%);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-light) 100%);
     --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 70%);
     --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(20, 184, 166, 0.8) 100%);
     
@@ -203,7 +203,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    padding: 0rem 2rem;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -219,8 +219,8 @@ p {
 }
 
 .logo {
-    height: 40px;
-    width: auto;
+    height: 80px;
+    width: 400px;
     border-radius: 6px;
 }
 
@@ -287,7 +287,7 @@ p {
 }
 
 /* Mobile Navigation */
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
     .mobile-menu-toggle {
         display: flex;
     }
@@ -566,7 +566,7 @@ section {
     bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 20%;
     height: 4px;
     background: var(--gradient-primary);
     border-radius: 2px;
@@ -1235,7 +1235,7 @@ section {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
-    color: var(--gray-300);
+    color: var(--gray-900);
 }
 
 .contact-info i {

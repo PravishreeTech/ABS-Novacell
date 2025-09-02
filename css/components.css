@@ -501,7 +501,7 @@
     font-size: 1.2rem;
 }
 
-.method-content h5 {
+.method-content h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
@@ -888,7 +888,7 @@
 .modal-content {
     background: white;
     border-radius: 16px;
-    max-width: 600px;
+    max-width: 1000px;
     width: 90%;
     max-height: 80vh;
     overflow-y: auto;
