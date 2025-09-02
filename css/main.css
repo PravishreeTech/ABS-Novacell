@@ -212,7 +212,7 @@ p {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 600;
     color: var(--primary-color);
     text-decoration: none;
@@ -231,14 +231,15 @@ p {
 .nav-menu {
     display: flex;
     list-style: none;
+    font-size: 15px;
     gap: 0.5rem;
     align-items: center;
 }
 
 .nav-link {
-    color: var(--gray-700);
+    color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     transition: all var(--transition-normal);
@@ -286,7 +287,7 @@ p {
 }
 
 /* Mobile Navigation */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
     .mobile-menu-toggle {
         display: flex;
     }
@@ -347,7 +348,7 @@ p {
 .page-hero {
     background: var(--gradient-hero);
     color: white;
-    padding: 2rem 0 4rem;
+    padding: 4rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -366,7 +367,7 @@ p {
 }
 
 .page-title {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: white;
 }
 
@@ -669,107 +670,82 @@ section {
 /* Achievement Carousel */
 .achievements-section {
     background: var(--bg-tertiary);
+    padding: 5rem 0;
 }
 
-.carousel-container {
+.achievements-carousel {
     position: relative;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 16px;
-    box-shadow: var(--shadow-xl);
+    border-radius: 20px;
 }
 
-.carousel-wrapper {
-    display: flex;
-    transition: transform var(--transition-slow);
+.achievement-slide {
+    display: none;
+    opacity: 0;
+    transition: all var(--transition-slow);
 }
 
-.carousel-slide {
-    min-width: 100%;
-    flex-shrink: 0;
+.achievement-slide.active {
+    display: block;
+    opacity: 1;
 }
 
 .achievement-card {
     background: white;
-    display: flex;
-    align-items: center;
-    min-height: 400px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
 }
 
 .achievement-image {
-    flex: 1;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
 .achievement-image img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.achievement-card:hover .partnership-image img {
+    transform: scale(1.05);
 }
 
 .achievement-content {
-    flex: 1;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 .achievement-content h3 {
+    color: var(--primary-color);
     margin-bottom: 1rem;
-    color: var(--primary-color);
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.achievement-content p {
+    color: var(--gray-600);
+    margin-bottom: 2rem;
+}
+
+.achievement-benefits {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    transition: all var(--transition-normal);
-    z-index: 10;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
-.carousel-btn:hover {
-    background: white;
-    box-shadow: var(--shadow-lg);
+.carousel-slide {
+    display: none;
+    opacity: 0;
+    transition: all var(--transition-slow);
 }
 
-.carousel-prev {
-    left: 20px;
-}
-
-.carousel-next {
-    right: 20px;
-}
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all var(--transition-normal);
-}
-
-.indicator.active {
-    background: white;
-    transform: scale(1.2);
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
 }
 
 /* Statistics */

@@ -234,11 +234,10 @@ class ABSNovacellWebsite {
         if (achievementsCarousel) {
             this.initializeCarousel('achievements', {
                 container: achievementsCarousel,
-                prevBtn: document.getElementById('carousel-prev'),
-                nextBtn: document.getElementById('carousel-next'),
-                indicators: document.getElementById('carousel-indicators'),
+                prevBtn: document.getElementById('achievements-prev'),
+                nextBtn: document.getElementById('achievements-next'),
                 autoPlay: true,
-                interval: 5000
+                interval: 4000
             });
         }
 
